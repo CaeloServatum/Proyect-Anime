@@ -1,0 +1,23 @@
+.Mahiro{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.divH{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(32, 211, 56);
+}
+.divI{
+    border-radius: 30%;
+}
+.divB{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 2.5px 15px;
+    animation: normal;
+    cursor: crosshair;
+    border-radius: 10px;
+}
