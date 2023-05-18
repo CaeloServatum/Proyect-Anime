@@ -4,4 +4,6 @@ Este sera un proyecto sobre anime, haremos una librebria interactiva con la cual
 
 こんにちは！ アドミレンアマヒロ！
 <p></p> <!-- Alinear a la Mahiro... -->
-<div class="Mahiro" style="display:flex;align-items:center;justify-content:center;width:100%"><img src="https://i.pinimg.com/564x/3f/fc/1e/3ffc1e7349e64480696c4f76e37f0b2e.jpg"></div>
+<div class="Mahiro" style="display:flex;align-items:center;justify-content:center;width:100%">
+  <img style="margin:auto" src="https://i.pinimg.com/564x/3f/fc/1e/3ffc1e7349e64480696c4f76e37f0b2e.jpg">
+</div>
