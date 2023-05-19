@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.divH{
+    width: 100%;
+    height: auto;
+    background-color: rgb(32, 211, 56);
+    padding: 10px 0px 10px 12px;
+    position: fixed;
+}
+.divI{
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+.divB{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 2.5px 15px;
+    border-radius: 5px;
+}
