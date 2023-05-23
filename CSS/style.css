@@ -8,6 +8,7 @@ body{
     width: 100vw;
     height: 100vh;
     background: #4D4D4D;
+    position: relative;
 }
 header main footer nav{
     position: relative;
@@ -31,13 +32,12 @@ nav{
     top: 0;
 }
 main{
-    width: 100vw;
-    height: 5000px;
+    width: calc(100vw - 10px);
+    max-width: 100%;
+    height: 3000px;
     background-color: #4D4D4D;
-    margin: 5px 5px;
+    margin: 5px;
     display: flex;
-    position: relative;
-    overflow: hidden;
 }
 .spanNav{ 
     color: white;
@@ -90,7 +90,7 @@ aside{
     width: 100%;
     height: auto;
     color: #4D4D4D;
-    overflow: auto;
+    overflow: hidden;
     padding: 5px 20px;
 }
 .emoji{
