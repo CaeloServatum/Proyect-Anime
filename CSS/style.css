@@ -72,14 +72,14 @@ main{
     border-color: #2A2433;
 }
 section{
-    width: 50vw;
+    width: auto;
     height: 800px;
     background-color: #2A2433;
     position: relative;
     display: inline-block;
 }
 aside{
-    width: 50vw;
+    width: auto;
     height: 800px;
     background-color: #2A2433;
     position: relative;
