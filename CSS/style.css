@@ -43,7 +43,6 @@ main{
     flex-wrap: wrap;
     margin: 5px 0px;
     justify-content: center;
-    overflow-y: auto;
     flex-direction: column;
     align-items: center;
 }
@@ -87,8 +86,32 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 5px;
+    padding: 5px;
     border-radius: 15px 15px 0px 0px;
+}
+table{
+    border: 2px solid #4D4D4D;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+tr{
+    width: 100%;
+    height: 25%;
+}
+th,td{
+    padding: 5px;
+    width: 25%;
+    border: 2px solid #4D4D4D;
+    color: white;
+}
+ul {
+    list-style-type: none; /* Erase the point */
+}
+li::before {
+    content: "\2022";
+    margin-right: 5px; 
 }
 aside{
     background-color: #2A2433;
@@ -100,15 +123,16 @@ aside{
     justify-content: center;
     border-radius: 0 0 15px 15px;
 }
-section img{
-    height: 70%;
-    border-radius: 15%;
-}
-aside div img{
+.NarutoSquareGif{
     width: 15%;
     height: auto;
     border-radius: 15%;
     margin-top: 10px;
+}
+.DancingTallGif{
+    height: 70%;
+    border-radius: 15%;
+    float: left;
 }
 .aside-Content{
     height: 100%;
@@ -233,12 +257,14 @@ aside div img{
 
 
 
-@media (max-width: 425px) {
+@media (max-width: 720px) {
     section{
         width: 90%;
         height: auto;
         border-radius: 5px 5px 0px 0px;
         padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
     }
     aside{
         width: 90%;
@@ -258,6 +284,25 @@ aside div img{
         justify-content: center;
         align-content: space-between;
     }
+    table{
+        border: 1px solid #4D4D4D;
+        border-radius: 5px;
+        width: 90%;
+        text-align: center;
+    }
+    th,td{
+        padding: 5px;
+        width: 25%;
+        border: 2px solid #4D4D4D;
+        color: white;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li::before {
+        content: "\2022";
+        margin-right: 2px; 
+    }
     nav{
         width: 100vw;
         background-color: #2A2433;
@@ -272,7 +317,7 @@ aside div img{
         align-content: center;
         align-items: baseline;
     }
-        aside div img{
+    .NarutoSquareGif{
         width: 35%;
         height: auto;
         border-radius: 15%;
@@ -283,7 +328,6 @@ aside div img{
         height: 400px;
         background-color: #2A2433;
         margin-top: 5px;
-        padding: 15px;
         border-radius: 15px;
         display: grid;
         grid-template-columns: auto auto auto;
@@ -403,13 +447,13 @@ aside div img{
         justify-content: center;
         align-content: space-between;
     }
-        aside div img{
+    .NarutoSquareGif{
         width: 35%;
         height: auto;
         border-radius: 15%;
         margin-top: 10px;
     }
-    section img{
+    .DancingTallGif{
         width: 90%;
         height: auto;
         border-radius: 15%;
@@ -448,4 +492,3 @@ aside div img{
         grid-template-rows: auto auto auto auto;
     }
 }
-/* owo */
