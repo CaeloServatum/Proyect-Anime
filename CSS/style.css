@@ -4,19 +4,22 @@
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive, Tahoma, Verdana, sans-serif;
 }
+
 body{
     width: 100vw;
     background: #4D4D4D;
     position: relative;
+    overflow-x: hidden;
 }
 header main footer nav{
     position: relative;
 }
 header{
-    width: 100vw;
+    width: 100vw;  
     height: 210px;
     background: url(https://i.pinimg.com/564x/30/a0/f7/30a0f76b75598e5ec6cad6d103e4e9d8.jpg) #2A2433  top repeat;
     background-attachment: fixed;
+    opacity: 0.6;
 }
 nav{
     width: 100vw;
@@ -34,13 +37,15 @@ nav{
     align-items: baseline;
 }
 main{
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 5px 0px;
     justify-content: center;
-    overflow: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: center;
 }
 .spanNav{ 
     color: white;
@@ -76,21 +81,24 @@ main{
 }
 section{
     background-color: #2A2433;
-    width: 20%;
-    height: 600px;
+    width: 80%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-top: 5px;
+    border-radius: 15px 15px 0px 0px;
 }
 aside{
     background-color: #2A2433;
-    width: 79%;
-    height: 600px;
+    width: 80%;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    flex-wrap: wrap;
+    border-radius: 0 0 15px 15px;
 }
 section img{
     height: 70%;
@@ -100,6 +108,7 @@ aside div img{
     width: 15%;
     height: auto;
     border-radius: 15%;
+    margin-top: 10px;
 }
 .aside-Content{
     height: 100%;
@@ -114,16 +123,6 @@ aside div img{
 .aside-Content span, h1{
     color: white;
 }
-.main_content{
-    width: 90%;
-    overflow-x: hidden;
-    background-color: #2A2433;
-    color: white;
-    margin-top: 5px;
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-}
 #die{
     position: absolute;
     color: white;
@@ -132,13 +131,118 @@ aside div img{
     bottom: 15px;
     right: 15px;
 }
+.main_content{
+    width: 80%;
+    height: 800px;
+    background-color: #2A2433;
+    margin-top: 5px;
+    padding: 15px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.main_content div{
+    background-color: #4D4D4D;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: 2px;
+    background-size: 100%;
+    opacity: 0.2;
+    transition-duration: 0.5s;
+    transition-property: inherit;
+}
+.main_content div:hover{
+    opacity: 1;
+}
+.cajita1{
+    grid-row: 1/4;
+    background-image: url(https://pre12.deviantart.net/91c4/th/pre/i/2012/064/9/a/uzumaki_naruto_vs_uchiha_sasuke_by_xabracadabra-d4rsna5.jpg);
+}
+.cajita2{
+    background-image: url(https://i.pinimg.com/originals/c5/06/ba/c506badaa60fba4785bfaa78e6c6ee1c.png);
+    background-position: center;
+}
+.cajita3{
+    grid-column: 3/5;
+    background-image: url(https://i.pinimg.com/736x/42/67/a3/4267a367202c335266fe0fad3eebfb9b.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+.cajita4{
+    grid-row: 2/4;   
+    background-image: url(https://64.media.tumblr.com/4b6750ca932ff7acf2ab69557bbe75b3/tumblr_of0c2tbWkE1tmym68o2_r1_1280.png);
+    background-size: 100%; 
+}
+.cajita5{
+    grid-row: 2/3;
+    background-position: center;
+    background-image: url(https://pbs.twimg.com/media/FAmvihaX0Bgj21e.jpg);
+}
+.cajita6{
+    grid-row: 2/4;
+    background-image: url(https://rare-gallery.com/thumbs/1105044-drawing-illustration-monochrome-anime-line-art-manga-cartoon-Naruto-Shippuuden-Uzumaki-Naruto-Haruno-Sakura-Uchiha-Sasuke-sketch-black-and-white-mangaka-comics-artist.png);
+    background-position: center;
+}
+.cajita7{
+    background-image: url(https://i.pinimg.com/originals/1d/5a/b1/1d5ab1ff568a49b6cef15973bb10258b.png);
+    background-size: 100%;
+    background-position: center;
+}
+.cajita8{
+    background-image: url(https://i.pinimg.com/736x/62/de/be/62debe826126b42162e326650b121ff0.jpg);
+    background-size: 100%;
+}
+.cajita9{
+    grid-column: 2/4;
+    background-image: url(https://i.pinimg.com/originals/5b/cb/15/5bcb154b288500ef819875de1bf23b56.jpg);
+    background-size: 100%;
+}
+.cajita10{
+    background-image: url(https://i.pinimg.com/originals/4d/83/06/4d8306a92af8606366507763b4133822.png);
+    background-size: 100%;
+}
+
+/* Media Queries Below */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 425px) {
     section{
         width: 90%;
+        height: auto;
         border-radius: 5px 5px 0px 0px;
+        padding: 5px;
     }
     aside{
         width: 90%;
+        height: auto;
         border-radius: 0px 0px 5px 5px;
     }
     .main_content{
@@ -167,5 +271,180 @@ aside div img{
         justify-content: center;
         align-content: center;
         align-items: baseline;
+    }
+        aside div img{
+        width: 35%;
+        height: auto;
+        border-radius: 15%;
+        margin-top: 8px;
+    }
+    .main_content{
+        width: 90%;
+        height: 400px;
+        background-color: #2A2433;
+        margin-top: 5px;
+        padding: 15px;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+    .main_content div{
+        background-color: #4D4D4D;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        margin: 2px;
+        background-size: 100%;
+        opacity: 0.2;
+        transition-duration: 0.5s;
+        transition-property: inherit;
+    }
+    .cajita1{
+        background-image: url(https://pre12.deviantart.net/91c4/th/pre/i/2012/064/9/a/uzumaki_naruto_vs_uchiha_sasuke_by_xabracadabra-d4rsna5.jpg);
+        grid-row: 1/3;
+    }
+    .cajita2{
+        background-image: url(https://i.pinimg.com/originals/c5/06/ba/c506badaa60fba4785bfaa78e6c6ee1c.png);
+        background-position: center;
+    }
+    .cajita3{
+        background-image: url(https://i.pinimg.com/736x/42/67/a3/4267a367202c335266fe0fad3eebfb9b.jpg);
+        background-size: 100%;
+        background-position: center;
+        grid-column: 1/3;
+    }
+    .cajita4{
+        background-image: url(https://64.media.tumblr.com/4b6750ca932ff7acf2ab69557bbe75b3/tumblr_of0c2tbWkE1tmym68o2_r1_1280.png);
+        background-size: 100%; 
+        grid-row: 1/2;
+    }
+    .cajita5{
+        background-position: center;
+        background-image: url(https://pbs.twimg.com/media/FAmvihaX0Bgj21e.jpg);
+        grid-column: auto;
+    }
+    .cajita6{
+        background-image: url(https://rare-gallery.com/thumbs/1105044-drawing-illustration-monochrome-anime-line-art-manga-cartoon-Naruto-Shippuuden-Uzumaki-Naruto-Haruno-Sakura-Uchiha-Sasuke-sketch-black-and-white-mangaka-comics-artist.png);
+        background-position: center;
+    }
+    .cajita7{
+        background-image: url(https://i.pinimg.com/originals/1d/5a/b1/1d5ab1ff568a49b6cef15973bb10258b.png);
+        background-size: 100%;
+        background-position: center;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .cajita8{
+        background-image: url(https://i.pinimg.com/736x/62/de/be/62debe826126b42162e326650b121ff0.jpg);
+        background-size: 100%;
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .cajita9{
+        background-image: url(https://i.pinimg.com/originals/5b/cb/15/5bcb154b288500ef819875de1bf23b56.jpg);
+        background-size: 100%;
+        grid-column: 1/3;
+    }
+    .cajita10{
+        background-image: url(https://i.pinimg.com/originals/4d/83/06/4d8306a92af8606366507763b4133822.png);
+        background-size: 100%;
+        grid-row: 4/6;
+    }
+}
+@media (max-width: 375px) {
+    nav{
+        width: 100vw;
+        background-color: #2A2433;
+        height: 64px;
+        display: flex;
+        border-top: white solid 1px;
+        border-bottom: white solid 1px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        justify-content: center;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .searchNav{
+        width: 280px;
+        height: 25px;
+        border-radius: 50px;
+        top: -4px;
+        position: relative;
+        border-color: white;
+        margin: 0px 5px;
+    }
+    section{
+        width: 90%;
+        height: auto;
+        border-radius: 5px 5px 0px 0px;
+        padding: 5px;
+    }
+    aside{
+        width: 90%;
+        height: auto;
+        border-radius: 0px 0px 5px 5px;
+    }
+    .main_content{
+        border-radius: 5px;
+    }
+    .aside-Content{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+        color: #4D4D4D;
+        align-items: center;
+        justify-content: center;
+        align-content: space-between;
+    }
+        aside div img{
+        width: 35%;
+        height: auto;
+        border-radius: 15%;
+        margin-top: 10px;
+    }
+    section img{
+        width: 90%;
+        height: auto;
+        border-radius: 15%;
+    }
+    .main_content{
+        width: 90%;
+        height: 350px;
+        background-color: #2A2433;
+        margin-top: 5px;
+        padding: 15px;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+}
+@media (max-width: 320px) {
+    .searchNav{
+        width: 250px;
+        height: 25px;
+        border-radius: 50px;
+        top: -4px;
+        position: relative;
+        border-color: white;
+        margin: 0px 5px;
+    }
+    .main_content{
+        width: 90%;
+        height: 300px;
+        background-color: #2A2433;
+        margin-top: 5px;
+        padding: 15px;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
     }
 }
