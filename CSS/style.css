@@ -11,7 +11,7 @@ body{
     position: relative;
     overflow-x: hidden;
 }
-header main footer nav{
+header, main, footer, nav{
     position: relative;
 }
 header{
@@ -227,6 +227,38 @@ aside{
     background-image: url(https://i.pinimg.com/originals/4d/83/06/4d8306a92af8606366507763b4133822.png);
     background-size: 100%;
 }
+.back-circle{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #2A2433;
+    left: 5%;
+    top: 5%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#back{
+    font-size: 15px;
+    color: white;
+    transition-duration: 0.5s;
+    transition-property: inherit;
+}
+#back:hover{
+    color: #4D4D4D;
+    font-size: 25px;
+}
+.grid-link{
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+    transition-property: initial;
+}
+.grid-link:hover{
+    text-decoration: underline;
+    color: #4D4D4D;
+}
 
 /* Media Queries Below */
 
@@ -264,7 +296,8 @@ aside{
         padding: 5px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
+        overflow-x: scroll;
     }
     aside{
         width: 90%;
@@ -293,9 +326,14 @@ aside{
     }
     th,td{
         padding: 5px;
-        width: auto;
+        width: auto; 
         border: 2px solid #4D4D4D;
         color: white;
+    }
+    tr td:nth-child(1){
+        position: sticky;
+        left: 0;
+        background-color: #2A2433;
     }
     ul {
         list-style-type: none;
@@ -398,6 +436,18 @@ aside{
         background-size: 100%;
         grid-row: 4/6;
     }
+    .back-circle{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        background-color: #2A2433;
+        top: 175%;
+        left: 5%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media (max-width: 375px) {
     nav{
@@ -470,6 +520,18 @@ aside{
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto auto;
     }
+    .back-circle{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        background-color: #2A2433;
+        top: 195%;
+        left: 5%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media (max-width: 320px) {
     .searchNav{
@@ -491,5 +553,17 @@ aside{
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto auto;
+    }
+    .back-circle{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        background-color: #2A2433;
+        top: 230%;
+        left: 5%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
